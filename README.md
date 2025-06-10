@@ -1,6 +1,6 @@
 # Chatbot LLM para Análise de Dados em Bucket da AWS S3
 
-Este projeto implementa uma interface inteligente para consulta e análise de dados a partir de um dataset armazenado na AWS S3. Utilizando um modelo de linguagem da OpenAI, o sistema interpreta perguntas em linguagem natural, converte-as em queries SQL, executa as consultas localmente com `pandas` + `sqlite3`, gera insights automáticos e exibe gráficos interativos via Matplotlib.
+Este projeto implementa uma interface inteligente para análise de dados a partir de um dataset armazenado na AWS S3. Utilizando um modelo de linguagem da OpenAI, o sistema interpreta perguntas em linguagem natural, converte-as em queries SQL, executa as consultas localmente com `pandas` + `sqlite3`, gera insights automáticos e exibe gráficos interativos via Matplotlib.
 
 ## Tecnologias Utilizadas:
 
