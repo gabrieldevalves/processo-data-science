@@ -50,6 +50,9 @@ O nome da tabela considerada nas consultas é `"s3object"`.
 - **Credenciais**  
   É necessário fornecer as credenciais da AWS e da OpenAI no terceiro bloco do notebook para funcionamento adequado. Arquivo .txt com credenciais enviado para Nayara Batista do RH.
 
+  - **Melhorias**  
+  É possível otimizar o tempo de resposta realizando a consulta via query diretamente no AWS S3 ou utilizando o AWS Athena para uma solução mais escalável, mas por gap técnico não consegui realizar neste formato.
+
 - **Execução Recomendada**  
   O projeto foi construído e testado no ambiente do Google Colab. A instalação das bibliotecas pode ser feita diretamente via:
 
