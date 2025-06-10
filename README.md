@@ -1,8 +1,8 @@
-# 🤖 Chatbot LLM para Análise de Dados com OpenAI e AWS S3
+# Chatbot LLM para Análise de Dados em Bucket da AWS S3
 
 Este projeto implementa uma interface inteligente para consulta e análise de dados a partir de um dataset armazenado na AWS S3. Utilizando um modelo de linguagem da OpenAI, o sistema interpreta perguntas em linguagem natural, converte-as em queries SQL, executa as consultas localmente com `pandas` + `sqlite3`, gera insights automáticos e exibe gráficos interativos via Matplotlib.
 
-## 🛠 Tecnologias Utilizadas
+## Tecnologias Utilizadas:
 
 - **OpenAI API** – para geração de SQL e insights a partir de prompts do usuário.
 - **Boto3** – integração com o AWS S3 para leitura do dataset.
@@ -11,7 +11,7 @@ Este projeto implementa uma interface inteligente para consulta e análise de da
 - **Matplotlib** – geração automática de gráficos com base nos dados retornados.
 - **Gradio** – interface web simples e interativa.
 
-## 📁 Estrutura de Dados
+##  Estrutura de Dados:
 
 O projeto opera sobre um dataset hospedado na AWS S3 com as seguintes colunas:
 
@@ -25,7 +25,7 @@ O projeto opera sobre um dataset hospedado na AWS S3 com as seguintes colunas:
 
 O nome da tabela considerada nas consultas é `"s3object"`.
 
-## ⚙️ Funcionamento Geral
+## Funcionamento Geral:
 
 1. O usuário digita um prompt, como por exemplo:  
    `"Qual a taxa de inadimplência por UF?"`
@@ -42,7 +42,7 @@ O nome da tabela considerada nas consultas é `"s3object"`.
 
 7. O resultado da consulta pode ser baixado como `.csv`.
 
-## 📝 Observações Importantes
+## Observações Importantes:
 
 - **Ajuste de Amostragem para Insights**  
   A quantidade de linhas do DataFrame analisadas para geração de insights pode ser ajustada facilmente no trecho `df.head(1000)` dentro da função `generate_insights`.
